@@ -1,0 +1,2 @@
+Assertions:
+In Selenium Assertions are checks that are performed during the test execution and helps in verifying whether the conditions are met or not

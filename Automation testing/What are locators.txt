@@ -1,0 +1,96 @@
+Selenium scan from top left
+Whenever in a webpage some page is changing then it is a good practise to use Thread.sleep(time) but in framework there is different thing to wait
+and diffeence between Thread.sleep() and implicitWait is that:-
+in implicitWait() when something is not coming on a screen there we use this and
+in Thread.sleep() when pages are changing there we go with this.
+in console write $('name of selectors like tagname.selectorname')
+Regular Expression are used when the className is too long and we want to use cssSelector or xpath there we go with Regular Expression
+Locators:
+-Locators are used to target the HTML element on a web page.
+-Selenium used tehse locators whihc are:(ID,Xpath,CSS Selector,name,Class Name, Tag Name,Link Text,Partial Link Text).
+-For example in a web page we have buttons like sign in, links are tehre now in order to target them we use locators.
+-These locators in HTML is known as attributes
+Steps to Use Locators on any HTML tag
+-1.) Inspect that page 
+-2.) Select the particualr HTML element which we want to target as locator and check which locator is used
+-3.) Now in our code select that element by using findElement(By.name of the locator whihc ever is used.if we want type anything then use 
+     name of the id ) then use method sendKeys("type here the emssage whihc youw ant to display there"). for example
+	driver.findElement(By.id("inputUserName")).sendKeys("Rahul"); now this will do th task.
+     Now suppose if we want to target the button then do same task inspect check whihc locator is used lets ay class is used then on button we click so:-
+	driver.findElement(By.className("classaname").click();
+	So here click is te action whihc we need to perform in above two cases the action was to write whihc is sendKeys
+
+	NOw if we want to select using CSS Selector whihc we dont found while we inspect also then also we can generate CSS selector from it liek this
+	COnsider these two situations
+	driver.findElement(By.id("inputUserName")).sendKeys("Rahul"); here id is inputUserName suppose instead of Id selector you want to do with CSS Selector
+	then CSS selector for this will be tagname#id like this input#inputUserName(here tagname is input and id name is inputSelector)
+	with classname also tagname.classanme  for example Button.className this will be teh CSS Selector
+	
+	Also we can generate CSS Seelctor also when we dont have id or class then the syntax is
+	Tagname[attribute='Value'];
+	For example Input[placeholder='Username'];
+	We go with CSS Selector when we have case where nothing is tehre like id, class, name there we opt for CSS Selector or Xpath
+	If we want to select anything from browser then we use getText.
+	Another way to use CSS Selector is Tagname[attribute='value']
+	like driver.findElement(By.cssSelector("input[placeholder='Email']"))
+	and we cannot use the index style i this whihc is used when we have multiple unique attributes like we do in the case of xpath here we use :nt-th child like this
+	[attribute='value']:nth-child(pass the number here whihc you want to target for example)
+	driver.findElement(By.cssSelector(input[type='text']:nth-child(2)"))
+
+	There is one more way of writting cssSelector ike we have in xpath that is parent to child relation and the syntax is
+	parentTagName space childTagname for example
+	form p
+
+	One more way when we want to select partially of any attribute tehre we go with this way the syntax is:
+	taganme[attribute*='partialvalue']" for example
+	input[type*='pass']
+	driver.findElement(By.cssSelector("input[type*='pass']")) This is known as regular expression
+	
+
+	Selenium is so fast so it shows soemtimes errro so in order to manage the time we need to manage teh time by usng manage method like this
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(pass the number)); and this thing is globally applicable to full code
+
+	Whenever tehre is a link (anchor tag) there we use linktext locator like this
+	driver.findElement(By.linkText("Here write the text whihc we have passed tehre as anchor")).click();
+
+	Like CSS Selector we have one more selector whihc is Xpath it is also and the way to generate Xpath is //Tagname[@attribute='value']
+	for example //input[@placeholder='value of placeholder']
+
+	driver.findElement(By.xpath("//input[@placeholder='Name']"))
+	Another way to use Xpath Selector is:
+	//TagName[@attribute='value'][index] (this one is used when we have multiple xpath there we use this index)
+	for example
+	driver.findElement(By.xpath("//input[@type='text'][2]"))
+	If we want to clear anything whihc is written there then we use clear() like this driver.findElement(By.xpath("//input[@type='text'][2]")).clear();
+
+	One more way of writting xpath is by using parent child relation and the syntax is 
+	//parentTagName/childTagname
+	and if tehre are multiple child with same tag then
+	//parentTagName/childTagName[index of child whihc you want to access]
+	for example: driver.findElement(By.xpath("//form/input[3]"))
+
+	Regular Expression in xpath
+	//tagname[contains(@attribute,'value')]
+	//button[contains(@class,'submit')] here we use contains but in cssSelector we dont use
+	Regular Expression in cssSelector
+	input[type*='pass']
+
+	Now if in xpath you want to use everything like clasName, parent chaile relation then teh sytax is
+	//parenttaname[@attributename='value']/childTagname[number of child whihc youw ant to select if multiple are there]"
+	for example
+	driver.findElement(By.xpath("//div[@class='full classname']/button[2]"))
+
+	Point 1.) There are situations in which the normal work doesnt work like driver.findElement(By.cssSelector("button[class='submit']")).click(); it is because when we dont mention explicit 
+	wait then the Selenium attempts to find the element and click it immediately. So an alternate for this is With Explicit Wait where we create teh object of WebDriverWait class
+	liek this WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); and using this object we performo our task like this
+	        WebElement submitButton = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.submit")));
+        submitButton.click();
+
+	Point 2.) There are situation where on some webpages this thing is mentioned 
+	<noscript>You need to enable JavaScript to run this app.</noscript> it emasn here we need to use this thing on some elements liek this we need to do
+	WebElement checkbox1 = driver.findElement(By.id("chkboxOne"));
+	((JavascriptExecutor) driver).executeScript("arguments[0].click();", checkbox1); 
+
+	Last Locatr is the tagName
+	whenever we have only one tag in a whole page tehre we use theis tagname because there is only one tag with taht tag on whihc we are applying so the syntax is
+	driver.findElement(By.tagName("p")); //now this will fetch that tag like here we are targetting p tag

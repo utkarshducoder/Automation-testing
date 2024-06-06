@@ -1,0 +1,46 @@
+Step 1: Invoke browser: Now to invoke a browser we have different class for different browser like for chrome we have
+	ChromeDriver class, FirefoexDriver, SafariDriver now these class contains methods with which we can invoke the browser
+	Now every class follows some rules whihc are decided by the interface named as WebDriver.
+	all tehse methods are present inside WebDriver and implementation is present in tehse classes.
+	So Selenium WebDriver is nothing but an iterface.
+	All the classes like ChromeDriver, SafariDriver, FirefoxDriver are responsile to give implementation to the methods of WebDriver
+	ChromeDriver driver = new ChromeDriver();(Specialization) can accsess only ChromeDriver methods	
+	*The ChromeDriver, FirefoxDriver and any class will have their own methods also but right now we dont need so in order to 
+	be more generlaized we do upcasting like this
+	WebDriver driver = new ChromeDriver();(Generalization) 	here driver object has acsess to accsess WebDriver methods also
+
+
+	Now as we know that Selenium does not interact with browser directlt, in between teh tird party comes which is driver of a browswer
+	so here we first need chrome driver whihc is chromedriver.exe and this we need to download and pass the value of url as value for a 
+	key value pair of webdriver.chrome.driver(this is a key) -> value of url of chromedriver.exe 
+
+	Now after we have downloaded the driver then set the path as a key value pair in java using 
+	System.setProperty("webdriver.chrome.driver","C:\Users\UtkarshGupta\Downloads\chromedriver-win32\chromedriver-win32")
+	Now after adding this now at run time check this property whihc is a key webdriver.chrome.driver and then go to the path which we have passed
+	as value and open that on chrome browser and perform all actions.
+
+	Now if we want to land on a particular url then we use get() of WebDriver interface like this
+	driver.get("pass the url where we want to land");
+
+	Now suppose if we want the title of the webpage tehn we use method of WebDriver named as getTitle() it will take the title of a webpage
+	and now if we want to see the title on console then we can do SOP(driver.getTitle());//will give teh title of that url whihc we have passed in get().
+
+	If we want to see whether that page only is operning or not which we have passed in get() or not so to validate we hav eone method of WebDriver interfae
+	whihc is getCurrentUrl() and we can do sop of this like this SOP(driver.getCurrentUrl()); and we can check whether the same url is opened or not 
+	which we wanted.
+
+	Now if wea want to close that url whihc we have passed in get() then we can use close()
+	If we will use quit() then everything will be close.
+	So the major difference between close() ad quit()
+
+
+	Now for firefox we use the class called as FirefoxDriver like this
+	WebDriver driver = new FirefoxDriver();
+	Now we will call the driver of firefox with the help of gecko.driver as a key and value will be the driver of firefox iek this
+	System.setProperty("webdriver.gecko.driver"(key),"driver of firefox"(value));
+	Next we will use get() where we will pass the url whihc we want to open
+
+		
+	Now for microsoft edge we have key as webdriver.edge.driver and pass the value as driver of microsoft edge in setProperty() of webDriver interface.
+	and name of class is EdgeDriver().
+

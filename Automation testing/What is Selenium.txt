@@ -1,0 +1,10 @@
+What is Selenium and features of Selenium?
+-An open source automation tool
+-used extensively for web based appliations
+-can work on multiple operating system using selenium(Windows, Linux, Solaris, OS X)
+-languags whihc are used with selenium are Java, Python, Rubym C#, PHP and Perl
+-browsers supported are Google chrome, Opera, Internet explorer, Safari
+
+Parts of Selenium
+-Selenium IDE: creates quick bug report, just record and play back tool not used
+-Selenium WebDriver: create robust regression based automation suits and tests. It is a sucsessor of Sleenium RC(Remote Control) whihc is now depricated.

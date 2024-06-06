@@ -1,0 +1,10 @@
+Selenium COde i client
+Browser is a servier
+Every browser has its own browser driver
+Code dos not communicate directly with browser code communicates with browser driver whihc we need to download and we give path for this.
+Browser driver is a server whihc acts as middleman between selenium code and browser.
+------------------------------------------------------
+Step1: After we trigger the test the whole Selenium code is converted into JSON format.
+Step2: This Json format is sent to the respected browser driver through http protocol.
+Step3: Browser driver communicates with its respected browser and executes the command.
+Step4: Now browser sends back the response to the the browser driver and it is send to the client in the form of JSON. 
