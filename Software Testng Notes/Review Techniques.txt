@@ -1,0 +1,31 @@
+Types of Review Techniques:
+1.) Ad Hoc
+2. )Checklist based
+3.) Scenarios and dry run
+4.) Perspective Based
+5.) Role-based
+
+1.) Ad Hoc:
+-No guidelines is provided to reviewers
+-Need less prepartion
+-review depends on reviwer skils
+-due to no lack of guidelines chances of deffects are there.
+
+2.) Checklist Based Review:
+-Checklist review is provided at the tym of initiate review 
+-the benefit of chekclist review is that it make sure that all teh requirements ae verified and completed
+-The checklist is given whihc contains some questions and based on that review is done.	
+
+3.) Scenarios and dry run:
+-in this the testers are provided with scenarios and based on taht he/she performs the review
+-they perform dry run and whatever defects comes in that they list down them.
+
+4.) Perspective based review:
+-in this the testers takes helps of stakeholdrs, and from their view point the review is done
+-in this the stakeholders include end user,marketing, designer, tester, or operations point of view.
+-in this the review is done on teh basis of different perople so there are very less chances of duplication of reviews.
+-how different role people understand the system.
+
+5.)Role based:
+-Review based on specific user roles
+-focus is on how specific roles interact with the system.			

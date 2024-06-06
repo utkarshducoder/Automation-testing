@@ -1,0 +1,11 @@
+What are the types of review?
+1.) Informal Review: No formal process, just a quick review check.
+		     provide fast feedback on the product.
+
+2.) Walkthrough: discuss with team memebers about how system works
+		 feedback comes from whole team side
+
+3.) Technical Review: review conducted by technical experts with technical aspects
+	      	      focus on only technical quality is met or not
+	 
+4.) Inspection: final go through of system.	

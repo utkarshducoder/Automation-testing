@@ -1,0 +1,27 @@
+Roles and responsibilty of each Team Members
+	
+1.) Author(Creates work product):
+	-creates the work product and fix the defect which occurs in them under review.
+
+2.) Management(Review planning):
+	-Design the test plan
+	-look through budget, and time
+	-Assign work to employees
+	-Decide the executio of review
+
+3.) Facilitor(Watch the review meeting going on in good manner or not):
+	-Make sure that the review which is going on whether it is in right direction or not
+	-acts as a medium if anything is required they provide.
+
+4.) Review Leader(Responsible for review):
+	-Person who manages the whole review team
+	-takes overall responsibility of review and organizes teh review
+
+5.) Reviewer(perform review and identify deffects):
+	-a person who perform the review
+	-Technical experts or even stakeholders can also become reviewers if intrested.
+	-they are the ones who identifies the deffect in teh product
+
+6.) Scribe(Records deffect):
+	-a person who collects all the information about review
+	-collects data from the review meetings and etc..

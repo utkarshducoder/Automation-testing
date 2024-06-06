@@ -1,0 +1,18 @@
+What is use case?
+Use case is a detailed information about how user interacts with system to achive a specific goal.
+
+Testers make test case from use case where normal workflow is consider as steps and the output which system gives is cosider as action in test case table.
+Testers made test case for alternative workflow also where same  thing testers do in this also like for normal workflow they do.
+
+What is the Use of Use Case Testing?
+1.)Requirement Gathering: Defines what system should do from teh user's perspective.
+2.) Design: Helps teh developers to understand the user's need and design the system accordingly.
+3.) Testing: Provide testers with specific scenarios to validate whether the system meets the user requirement or not.
+
+How it helps Testers?
+1.) Test Case Creation
+2.) Validation
+3.) Coverage
+4.) Clarity
+
+So mainly use case helps testers to validate, or to ensure whether system meets user requirement or not.

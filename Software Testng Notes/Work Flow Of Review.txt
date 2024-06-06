@@ -1,0 +1,30 @@
+The review process goes in this seqence:-
+1.) Planing
+2.) Initiate Review
+3.) Individual Review
+4.) Issue communication and analysis
+5.) Fixing and reporting
+
+Planning:
+	-objective is defined
+	-team is allocated with tehir roles and responsibility
+	-time is scheduled and what are teh necessary things reqired for review is decided.
+	-entry and exit criteria is defined
+	-checks whether the these criterias are met or not.
+
+Initiate Review:
+	-the review plan is explained to all the participants
+	-the ojective and scope of review is clear to all of them
+	-roles and responsibilites are confirmed.
+
+Individual Review:
+	-each reviewer performsthe review and notes down any issue or updation occurs in the log sheet.
+	-prepare their feedback which they need to discuss in review meetings.
+
+Issue Communication and Analysis:
+	-deffects are discussed, clarrified and categorized.
+	-Solution are proposed and decisions are made.
+
+Fixing and Reporting:
+	-issues are fixed by the development team.
+	-these issues and solutions are documented for the future refernce.

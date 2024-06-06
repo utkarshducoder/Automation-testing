@@ -1,0 +1,111 @@
+Why we require testing of software?
+1.) good to know wheather our software works
+2.) customers like our software
+3.) Software doesnt harm inpu
+
+
+Types of Software Bugs?
+1.) Ariane 5 disaster
+2.)The therac-25 radiation thereapy overdoses
+
+Roke of Tester
+1.) Investigate: Why is happening and how it is happening
+2.)Learner: Learn about the software and go through like where problem is occuring
+3.) Reporter: Inform the team that error can occur by gathering the data
+
+Types of Tester:
+1.) Integerated Tester: Sits with team during development, team bias possible
+2.) Sperate Tester: Post deployment testing focus, floating resources possible, "outsider perspective"
+
+* Tester plays a role of gatekeeper becasuse it it decide wheather to approve or reject the software 
+
+Two big Vocabulary Dust ups
+1.) Test Vs check
+Accordinfg to context-driven school
+Test is like exploring the problem or understancing the problem statement like while login we are testing with different credentials 
+like in that situation what output we get
+Check is verification or confirming whether the software behaves as expected like in login tym we are confirming whether login credentials
+met with expected data or not
+
+2.) Automated Testing vs Manual Testing
+
+
+-------------------------------------------------
+Important Context
+1.) How deterministic is the project? doubt
+2.) What is relation b/w tester to developers(what testing can be done and whihc one will be best)
+3.) What worst thing can happen if product has deffect
+4.) What is the technical nature of the project?(is it a mobile application or a web application)
+-------------------------------------------------------------
+
+Test Strategy
+While devloping the software first step by step process is:-
+1.) System Engineering
+2.) Validation Testing
+3.) Integeration Testing
+4.) Unit Testing
+
+But while doing software testing the process is:-
+1.) Unit Testing: Testing of each moule one by one indpendently based on implementaion like if 10 components are there then each one independently will be checked like internal code/ structure is test
+complee coverage of a unit independently	
+2.) Integeration Testing: one or two small modules are integerated and then checked whether both of them when form one is working properly or not
+3.) Validation Testing: we apply validations whether and checks whether they are giving correct output or not
+4.) System Engineering/System Testing: deploy our software and check whether they are working properly on a system/hardware or not.
+-----------------------------------------------------------------
+
+Five-fold Testing System
+dimension of testing technique are:-
+1.) Testers: who is doing testing
+2.) Coverage: What is tested
+3.) Potential Problems: Why you're testing
+4.)Activities: How you're testing
+5.)Evaluation: How results are determined
+
+these dimensons help to find good testing strategy
+Agile Testing Quadrants(dubt)
+White box testing
+-knows about the internal sructure of software(what software is going to do and how it will do)
+-example like driving a car but full knowledge of how its engine is working an ol like test engineer
+-shouldhave knowledge of programming langauage
+-will look in the source code and know the funcationality.
+-mainly used in unit testing
+Black Box testing
+-no knowledge of internal structure of software, just give  the input and checks whether output is coming proper or not(what software will do, but no knowledge of how i will do)
+-example like driving a car but no knowledge of how its engine is working an ol 
+-no need to have knowledge of programming lang.T
+-can be used anywhere
+----------------------------------------------------------------------
+
+Test Planning
+WHat to test?
+1.) Written coverage notes
+2.) Test what is new
+3. )Test for biggest risks
+4.) Test the most important or most commonly used features
+5.) Test that thing whihc i most likley to be broken
+-just verify the functionality of the product whether it is working or not
+
+----------------------------------------------------
+Testing can be done on the basis of inout and output(here we match the input enter by the used with the data present in the database and the challanging part is to which category we should
+compare with)
+
+Planning Test data:
+1.) Equivalence partitioning: Divide inpt data into equaivalent groups
+2.) Boundary testing: user can enter data whihc is present at the boundary or exceed the limit like 100 or 101
+3.) All Singles, all pairs: tring every value of every variable at least once, or all pairs of values at least once.
+4.) Trying tose combinations as input whihc might cause problems.
+5.) Trying nonsense input like they ordered 0.1 bear, 1/2 bear
+
+---------------------------------------------
+Descision Tables: 
+-used to record the inputs and expected output to test in tabular manner.
+-data whihc is in table is easily scanned by testing tool, and it is most easily supported by automated tools.
+-------------------------------------------
+State Transition Testing
+It contains:-
+1.) States(like obects whihc are there in circle)
+2.) Event(doing some task like clicking because of events only ransaction occurs)
+3.) Transaction(arrows or flow what happens next)
+4.) Action(Some message whihc displays)
+---------------------------------------------
+TestScripts(Doubt)

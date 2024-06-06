@@ -1,0 +1,22 @@
+Independence Testing:
+It is not a hard and fast rule that testing should only be done by tester.
+Levels of independence:
+1.) Pair programming:  When two people either deve or dev or dev or tester do programming.
+2.) Team of testers who are independent and outside the team and reporting to manager.
+
+Benefites of Independence Testing:
+1. )Deffects can be seen through the perspective of bussiess analyst, developers.
+
+Disadvantage Of Independence Testing:
+1.) It may leads to the isolation of Test team from developers
+2. )Independent testers may not have full information that they need to test the object.
+
+Test Manager
+A person who manages the test activities, it can be qa lead, senior tester some of teh task of test manager includes, create test strategies, 
+plan the test activities on the basis of test objectives, coordiate test plan.
+
+Tester:
+A skilled person whi os associated with doing a task.
+
+Test Plan:
+Documentation describing the test objectives  to be achived and schedule when to achive them
