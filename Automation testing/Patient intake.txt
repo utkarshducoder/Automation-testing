@@ -1,0 +1,14 @@
+Patient Intake
+
+1.) New transaction page
+
+	Alone working: Patient Name (working)
+			      Persno Nbr (working)
+	
+
+	Combination working: Street Address + person Nbr
+			     Street Address + DOB(with one field also)
+			     Street Address + gender(working)	
+			     	
+	Not working: Only gender(gives list but not full list)
+		     Only data(gives list but not full list)	
