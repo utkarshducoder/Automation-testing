@@ -1,0 +1,7 @@
+StepDefinations\TestRunnerForHooks.class
+StepsForHooks\HooksDemoSteps.class
+pages\LoginPage.class
+pagefactory\HomePage_PF.class
+pagefactory\LoginPage_PF.class
+StepDefinations\TestRunnerForBackground.class
+StepsForBackground\BackgroundDemoSteps.class
