@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="17.929" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Customer" name="To add new customer" time="10.54">
+<system-out><![CDATA[
+Given user launch chrome browser............................................passed
+And search for "https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F".passed
+And user enters email as "admin@yourstore.com" and password as "admin"......passed
+And click on login..........................................................passed
+Then user can view dashboard................................................passed
+Then click on customer menu.................................................passed
+Then click on customers menu item...........................................passed
+And click on Add new button.................................................passed
+Then user is redirected to the add new customer page........................passed
+And user fill all customer details..........................................passed
+Then click on Save button...................................................passed
+And close the browser.......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Customer" name="To search customer by email" time="7.188">
+<system-out><![CDATA[
+Given user launch chrome browser............................................passed
+And search for "https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F".passed
+And user enters email as "admin@yourstore.com" and password as "admin"......passed
+And click on login..........................................................passed
+Then user can view dashboard................................................passed
+Then click on customer menu.................................................passed
+Then click on customers menu item...........................................passed
+And enter customer email....................................................passed
+And click on Search button..................................................passed
+Then user should find thet customer in the list of customer table...........passed
+And close the browser.......................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
